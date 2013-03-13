@@ -1,5 +1,5 @@
 
-require 'rake/gempackagetask'
+require 'rubygems/package_task'
 require 'rake/contrib/rubyforgepublisher'
 
 $VERBOSE = nil
@@ -24,9 +24,9 @@ end
 
 task :package => :clean
 
-Rake::GemPackageTask.new(gemspec) { |t|
-  t.need_tar = true
-}
+Gem::PackageTask.new(gemspec) do |pkg|
+   pkg.need_tar = true
+end
 
 task :doc => :clean_doc do 
   files = ["README", "lib/perforce.rb"]
