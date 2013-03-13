@@ -6,7 +6,7 @@ Gem::Specification.new { |t|
   t.author = "James M. Lawrence"
   t.email = "quixoticsycophant@gmail.com"
   t.rubyforge_project = "perforce"
-  t.homepage = "perforce.rubyforge.org"
+  t.homepage = "http://perforce.rubyforge.org"
   t.has_rdoc = true
   t.extra_rdoc_files = ['README']
   t.rdoc_options += %w{--title Perforce --main README}
